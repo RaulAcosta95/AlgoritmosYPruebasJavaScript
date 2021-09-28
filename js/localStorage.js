@@ -23,3 +23,14 @@ function _cambiaInnerLocalStorage() {
 }
 
 
+// ------------------------------------------------------------------
+// GUARDAR UN OBJECT O ARREGLO
+
+let alarmasActivas = [];
+    localStorage.setItem('alarmasLocalStorage',JSON.stringify(alarmasActivas));
+    let arregloAlarmasTemporal = JSON.parse(localStorage.getItem('alarmasLocalStorage')) ;
+
+// ------------------------------------------------------------------
+
+// localStorage.clear(); //AQUI LIMPIA LOCAL STORAGE
+// localStorage.removeItem('miGato'); //AQUI LIMPIA UN ITEM DE LOCAL STORAGE
