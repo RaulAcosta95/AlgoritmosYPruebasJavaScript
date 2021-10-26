@@ -21,7 +21,8 @@ console.log("" && "3"); // "" ...????
 console.log(6 && 8); //8 ...????
 console.log(false || 5); //5 ... ???
 console.log("Hola" || "Mundo"); //Hola
-console.log(0 === 0.00); //Valor y tipo... no etiendo, da true
+console.log(0 === 0.00); //Valor y tipo true number ambos
+
 console.log(typeof true); //boolean
 
 
@@ -43,3 +44,7 @@ var variableMultipleLinea = 'Primera Línea \
                             Segunda Línea\
                             Ultima Línea';
 console.log(variableMultipleLinea);
+
+console.log(typeof NaN);
+console.log(typeof undefined);
+console.log(typeof null);
