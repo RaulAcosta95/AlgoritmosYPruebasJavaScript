@@ -48,3 +48,21 @@ console.log(variableMultipleLinea);
 console.log(typeof NaN);
 console.log(typeof undefined);
 console.log(typeof null);
+
+
+var d = parseFloat("34 45 66"); //toma lo primero que pueda convertir
+console.log(d + " Type: " + typeof d); //34 Number
+var f = parseInt("40 years") + "<br>"; //40<br>
+console.log(f + " Type: " + typeof f); //String
+var oo = String(23);
+console.log(oo + " Type: " + typeof oo); //String
+
+                                //number        //String
+var ConcatenaOSuma =  3 + 2 + '7'; //3+2 = 5 + "7" = 57 String
+console.log("ConcatenaOSuma: " + ConcatenaOSuma + "typeof: " + typeof ConcatenaOSuma);
+                                //String
+var ConcatenaOSuma2 =  "3" + 2 + 7; //"3"+2 = 32 + 7 = 39 String
+console.log("ConcatenaOSuma2: " + ConcatenaOSuma2 + "typeof: " + typeof ConcatenaOSuma2);
+
+document.write ("Bienvenido");
+document.write ("<h2>Pruebas JavaScript</h2>");
