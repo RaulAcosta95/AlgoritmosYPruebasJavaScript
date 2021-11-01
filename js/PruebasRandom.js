@@ -50,6 +50,7 @@ console.log(typeof undefined);
 console.log(typeof null);
 
 
+
 var d = parseFloat("34 45 66"); //toma lo primero que pueda convertir
 console.log(d + " Type: " + typeof d); //34 Number
 var f = parseInt("40 years") + "<br>"; //40<br>
@@ -64,5 +65,16 @@ console.log("ConcatenaOSuma: " + ConcatenaOSuma + "typeof: " + typeof ConcatenaO
 var ConcatenaOSuma2 =  "3" + 2 + 7; //"3"+2 = 32 + 7 = 39 String
 console.log("ConcatenaOSuma2: " + ConcatenaOSuma2 + "typeof: " + typeof ConcatenaOSuma2);
 
-document.write ("Bienvenido");
-document.write ("<h2>Pruebas JavaScript</h2>");
+document.write ("Bienvenido"); //Escribe en el DOM
+document.write ("<h2>Pruebas JavaScript</h2>"); //Acepta etiquetas
+
+variableNoDeclarada = 4;
+console.log("Variable No Declarada" + variableNoDeclarada); //4
+
+const array1 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]

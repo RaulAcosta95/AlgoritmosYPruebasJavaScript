@@ -1,1 +1,1 @@
-document.write(escape ("Hola? Como estas tu?"));
+document.write(escape ("Hola? Como estas tu?"));//Encripta
