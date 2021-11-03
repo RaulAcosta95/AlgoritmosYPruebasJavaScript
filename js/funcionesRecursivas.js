@@ -4,7 +4,7 @@ console.log('arreglo: '+arreglo);
 const arregloMap = arreglo.map(function(elemento){
     return elemento + 5;
 })
-console.log('arregloMap: '+arregloMap);
+console.log(arregloMap);//[6,7,8]
 
 // REDUCE
 const array1 = [1, 2, 3, 4];
@@ -20,7 +20,7 @@ console.log('arrayReducido: '+array1Reducido);// expected output: 10
 const arregloFiltrado = arreglo.filter(function(elemento){
     return elemento !== 1;
 });
-console.log('arregloFiltrado !== 1 : ' + arregloFiltrado);
+console.log('arregloFiltrado !== 1 : ' + arregloFiltrado);//[2,3]
 
 // Variables que no se alteran
 const conoceAutor = function(){
@@ -41,7 +41,7 @@ function recurrir(inicio, fin){
     }
 }
 
-recurrir(5, 10);
+recurrir(5, 10); //5,6,7,8,9, 10 (fin)
 // CURRING
 function currySuma(primerNum){
 	return function(segundoNum){
@@ -50,9 +50,10 @@ function currySuma(primerNum){
 }
 
 let suma10 = currySuma(10)(2);
-console.log('Función Curring: '+suma10);
+console.log('Función Curring: '+suma10); //12
 
 let suma20 = currySuma(20);
+console.log(suma20); //ƒ (segundoNum){ return primerNum + segundoNum;}
 suma20(2); // Returns 22
 console.log('Función Curring: '+suma20(2));
 

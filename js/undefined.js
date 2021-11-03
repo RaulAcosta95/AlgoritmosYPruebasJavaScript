@@ -1,11 +1,15 @@
 console.log(undefined); //Undefined
 console.log(!undefined); //true
+console.log(!!undefined); //false
 console.log(null); //null
 console.log(!null); //true
+console.log(!!null); //false
 console.log(1); //1
 console.log(!1); //false
+console.log(!!1); //true
 console.log(0); //0
 console.log(!0); //true (0 es false)
+console.log(!!0); //false (0 es false)
 
 var libro = {
     titulo:'Las Legiones Malditas',  
